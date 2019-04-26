@@ -1,0 +1,4 @@
+# -- Editor ----------
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
