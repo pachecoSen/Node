@@ -11,4 +11,5 @@ node_modules
 .eslintrc.yml
 
 # -- otros ----------
-Bases de node/tablas
+Bases de node/tablas/*
+Bases de node/tablas/*.*
