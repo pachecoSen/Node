@@ -2,3 +2,6 @@
 *.code-workspace
 *.sublime-project
 *.sublime-workspace
+
+# -- node_modules
+Bases de node/node_modules
