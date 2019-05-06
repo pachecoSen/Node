@@ -3,5 +3,9 @@
 *.sublime-project
 *.sublime-workspace
 
-# -- node_modules
+# -- node_modules ----------
 Bases de node/node_modules
+node_modules
+
+# -- eslint ----------
+.eslintrc.yml

@@ -1,11 +1,14 @@
-const fs = require("fs");
+const { writeFile } = require("fs"),
+    { argv } = require("yargs");
 
-const base = (process.argv[2]).split('=')[1];
+const base = argv.base;
+console.log(base);
+
 let outData = '';
 for (let index = 1; index <= 10; index++)
     outData += `${ base } * ${ index } = ${ base * index }\n`;
 
-fs.writeFile(`tablas/tablas_${ base }.txt`, outData, 'utf8',
+writeFile(`tablas/tablas_${ base }.txt`, outData, 'utf8',
     err => {
         if (err) throw err;
     
