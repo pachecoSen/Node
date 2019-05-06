@@ -1,0 +1,22 @@
+{
+  "name": "bases-node",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ignacio Pacheco",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pachecoSen/Node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pachecoSen/Node/issues"
+  },
+  "homepage": "https://github.com/pachecoSen/Node#readme",
+  "description": "",
+  "dependencies": {
+    "yargs": "^13.2.2"
+  }
+}
