@@ -1,0 +1,30 @@
+{
+    "lister" : {
+        "descripcion" : "Imprime por pantalla",
+        "command" : {
+            "base" : {
+                "demand" : true,
+                "alias" : "b"
+            },
+            "limit" : {
+                "demand" : false,
+                "alias" : "l",
+                "default" : 10
+            }
+        }
+    },
+    "crear" : {
+        "descripcion" : "Crea un archivo con la tabla",
+        "command" : {
+            "base" : {
+                "demand" : true,
+                "alias" : "b"
+            },
+            "limit" : {
+                "demand" : false,
+                "alias" : "l",
+                "default" : 10
+            }
+        }
+    }
+}

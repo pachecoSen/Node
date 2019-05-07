@@ -1,16 +1,23 @@
-const { writeFile } = require("fs"),
-    { argv } = require("yargs");
 
-const base = argv.base;
-console.log(base);
+const argv  = require("./config/yargs");
 
-let outData = '';
-for (let index = 1; index <= 10; index++)
-    outData += `${ base } * ${ index } = ${ base * index }\n`;
+const { geoTabla, geoFile } = require('./helper');
 
-writeFile(`tablas/tablas_${ base }.txt`, outData, 'utf8',
-    err => {
-        if (err) throw err;
+const { base, limit, _:exec } = argv;
+
+let outData = geoTabla(base, limit);
+
+switch (exec[0]) {
+    case 'crear':
+        geoFile(`tablas/tablas_${ base }.txt`, outData)
+            .then(res => console.log(res))
+            .catch(err => console.log(err));
+        break;
     
-        console.log('Archivo Guardado!');
-    });
+    case 'lister':
+        console.log(outData);
+        break;
+    default:
+        console.log('Sin comando para executar');
+        break;
+}
