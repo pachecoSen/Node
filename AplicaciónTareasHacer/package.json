@@ -1,0 +1,23 @@
+{
+  "name": "por_hacer",
+  "version": "1.0.0",
+  "description": "Aplicacion de tareas por hacer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pachecoSen/curso_node.git"
+  },
+  "author": "Ignacio Pacheco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pachecoSen/curso_node/issues"
+  },
+  "homepage": "https://github.com/pachecoSen/curso_node#readme",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "yargs": "^13.2.4"
+  }
+}
